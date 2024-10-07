@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Currency Converter</h1>
+            <p>Convert amounts between different currencies using up-to-date exchange rates.</p>
+        </header>
+
+        <div class="converter">
+            <div class="input-area">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+                <label for="from-currency">From:</label>
+                <select id="from-currency"></select>
+            </div>
+
+            <div class="conversion-area">
+                <label for="to-currency">To:</label>
+                <select id="to-currency"></select>
+                <button id="convert-button">Convert</button>
+            </div>
+
+            <div class="result-display">
+                <h2>Converted Amount:</h2>
+                <p id="result">0.00</p>
+            </div>
+        </div>
+
+        <div class="refresh-button">
+            <button id="refresh-button">Refresh Rates</button>
+        </div>
+
+        <footer>
+            <p>Currency Converter &copy; 2024. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
